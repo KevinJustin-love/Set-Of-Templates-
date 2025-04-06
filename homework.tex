@@ -1,0 +1,40 @@
+\documentclass[12pt, oneside, a4paper]{ctexart}
+\usepackage{graphicx, amsmath, amsthm, xcolor, float, cite}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+\bibliographystyle{plain}
+% \linespr 
+\title{\textbf{主标题—— \\ \large 副标题}}
+\author{名字 \thanks{其他信息}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\noindent
+\begin{flushleft}
+  \setlength{\parindent}{0pt}
+  \small
+  {\heiti【摘要】} 这里是摘要
+  \par
+  {\heiti【关键词】} 这里是关键词
+  \normalsize
+\end{flushleft}
+
+\section{\textbf{}}
+
+% 下面放图片
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{photo.png}
+  \caption{}
+  \label{fig:1}
+\end{figure}
+
+% 里面放 bibtex 格式的论文
+\bibliography{reference}
+
+\end{document}
