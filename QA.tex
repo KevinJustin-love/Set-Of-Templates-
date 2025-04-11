@@ -1,0 +1,29 @@
+% 一个问答的latex模板
+\documentclass[12pt, oneside, a4paper]{ctexart}
+\usepackage{xcolor}    % 颜色支持
+\usepackage{enumitem}  % 自定义列表
+\usepackage{listings}  % 代码块支持（可选，用于示例中的代码）
+
+% 定义问答环境
+\newenvironment{QA}
+  {\begin{description}[style=nextline, leftmargin=2em, font=\normalfont]}
+  {\end{description}}
+
+% 自定义问题格式
+\newcommand{\Q}{\item[\textbf{\color{blue}Q:}]}
+\newcommand{\A}{\item[\textbf{\color{red}A:}]}
+
+\begin{document}
+
+\section*{题}
+
+\begin{QA}
+\Q 问
+\A 答
+
+\Q 问
+\A 答
+
+\end{QA}
+
+\end{document}
