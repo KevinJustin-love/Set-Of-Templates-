@@ -3,7 +3,7 @@
 \usepackage{xcolor}    % 颜色支持
 \usepackage{enumitem}  % 自定义列表
 \usepackage{listings}  % 代码块支持（可选，用于示例中的代码）
-
+\usepackage[absolute,overlay]{textpos} % 用于放置开头的科大图片
 % 定义问答环境
 \newenvironment{QA}
   {\begin{description}[style=nextline, leftmargin=2em, font=\normalfont]}
@@ -14,6 +14,9 @@
 \newcommand{\A}{\item[\textbf{\color{red}A:}]}
 
 \begin{document}
+\begin{textblock*}{10cm}(2cm,0.5cm) % 调整图片位置到更上方
+    \includegraphics[width=16cm]{beginning.jpg}
+\end{textblock*}
 \pagestyle{empty} % 清除页眉和页脚
 \section*{题}
 
