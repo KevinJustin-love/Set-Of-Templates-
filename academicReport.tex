@@ -1,0 +1,36 @@
+\documentclass[12pt, oneside, a4paper]{article}
+\usepackage{xcolor}      % 颜色支持
+\usepackage{enumitem}    % 自定义列表
+\usepackage{graphicx}    % 图片支持
+\usepackage{setspace}    % set the space
+\usepackage[font=small,labelfont=bf]{caption} % 图注样式
+\usepackage{geometry}
+\usepackage{xeCJK, float}
+\usepackage{CJKutf8}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+% 注意！！！本文是一面pdf两列的排版格式，使用前请仔细审阅是否合适！！！
+\begin{document}
+\clearpage
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.5\textwidth]{log.jpg}\\ % log.jpg: the logo of USTC
+    \vspace{2cm} 
+    {\huge \bfseries 这里是标题}\\[1cm] 
+    {\large 个人信息}\\[1cm] 
+    {\large 个人信息}\\[1cm] 
+    {\large 个人信息}\\[1cm] 
+    {\large 日期} 
+\end{titlepage}
+\fontsize{14pt}{20pt}\selectfont
+\pagestyle{empty} % 清除页眉和页脚
+\begin{twocolumn}
+
+\section{\textbf{章节标题}}
+\begin{center}
+  \includegraphics[width=0.8\linewidth]{example.png} % 这里放图片
+  \captionof{figure}{}
+\end{center}
+\end{twocolumn}
+
+\end{document}
