@@ -3,6 +3,7 @@
 \usepackage{indentfirst}
 \usepackage{setspace}
 \usepackage{enumitem}
+\usepackage[absolute,overlay]{textpos} % 放置开头的科大图徽
 
 \bibliographystyle{plain}
 % \linespr 
@@ -11,6 +12,9 @@
 \date{\today}
 
 \begin{document}
+\begin{textblock*}{10cm}(2cm,0.5cm) % 调整图片位置到更上方
+    \includegraphics[width=16cm]{beginning.jpg}
+\end{textblock*}
 \pagestyle{empty} % 清除页眉和页脚
 \maketitle
 
